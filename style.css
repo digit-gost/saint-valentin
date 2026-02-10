@@ -12,31 +12,39 @@
     100% { background-position: 0% 50%; }
 }
 body{
-    background: linear-gradient(270deg, #df1b1b, #FF9D9D);
+    background: linear-gradient(270deg, #ed66ed, #FF9D9D);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     display: grid;
     place-items: center;
     min-height: 100vh;
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
+}
+
+.card-holder{
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 60px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card-question{
     background-color: pink;
     border: 1px solid black;
-    border-radius: 10px;
     text-align: center;
     align-items: center;
-    padding: 100px;
     width: fit-content;
     border: 1px solid black;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    padding: 100px;
+    border-radius: 55px;
+    padding: 50px;
     width: fit-content;
+    box-shadow: 0 4px 15px rgb(255, 0, 144);
+    max-width: 420px;
 }
 
 .gif-image{
@@ -99,4 +107,54 @@ body{
 .buttons .btn-yes a{
     text-decoration: none;
     color: white;
+}
+
+
+/*Responsive*/
+@media (max-width: 992px) {
+
+    .card-question{
+        padding: 50px;
+    }
+
+    .title p{
+        font-size: 24px;
+    }
+
+    .gif-image img{
+        width: 85px;
+    }
+
+    .btn-yes, .btn-no{
+        font-size: 16px;
+        padding: 12px 26px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .card-question{
+        width: 100%;
+        padding: 35px;    
+}
+
+    .title p{
+        font-size: 20px;
+    }
+
+    .gif-image img{
+        width: 70px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .btn-yes, .btn-no{
+        width: 100%;
+        font-size: 15px;
+        padding: 14px;
+    }
 }
