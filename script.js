@@ -17,5 +17,5 @@ btnNo.addEventListener('click', function() {
 });
 
 btnYes.addEventListener('click', function() {
-    alert("🎉🥰 Oui ! Tu rends ma journée !\nMaintenant je t'ai écrit un petit poême avec un son ambiant. Si tu arrive sur la page appuis sur le titre du poême pour l'activer. Je t'aime♥️");
+    alert("🎉🥰 Oui ! Tu rends ma journée !\nMaintenant je t'ai écrit un petit poême avec un son ambiant. Si tu arrive sur la page appuis sur le titre du poême pour activer l'animation et laisse laisse la magie s'opérer😉\nJe t'aime♥️ ");
 });
